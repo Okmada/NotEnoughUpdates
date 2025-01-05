@@ -189,14 +189,14 @@ class DevTestCommand {
                     )
                 )
             }.withHelp("Display information about the special block zone at your cursor (Custom Texture Regions)")
-            thenLiteral("pt") {
-                thenArgument("particle", EnumArgumentType.enum<EnumParticleTypes>()) { particle ->
-                    thenExecute {
-                        FishingHelper.type = this[particle]
-                        reply("Fishing particles set to ${FishingHelper.type}")
-                    }
-                }
-            }
+//            thenLiteral("pt") {
+//                thenArgument("particle", EnumArgumentType.enum<EnumParticleTypes>()) { particle ->
+//                    thenExecute {
+//                        FishingHelper.type = this[particle]
+//                        reply("Fishing particles set to ${FishingHelper.type}")
+//                    }
+//                }
+//            }
             thenLiteral("callUrsa") {
                 thenArgument("path", RestArgumentType) { path ->
                     thenExecute {
